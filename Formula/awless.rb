@@ -23,7 +23,7 @@ class Awless < Formula
 
     cd dir do
       # Make binary
-      system "go", "run", "release.go", "-tag", "v#{version}", "-brew", "-arch", "#{arch}", "-os", "darwin"
+      system "go", "run", "release.go", "-tag", "v#{version}", "-brew", "-arch", "#{arch}", "-os", "linux"
       bin.install "awless"
 
       # Install bash completion
